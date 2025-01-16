@@ -97,3 +97,7 @@ For each parameter we will need to define:
 1. Recipient: Which team(s) is/are receiving this parameter
 1. Reason: Why is this parameter important 
 1. Dependency: What does it rely on
+
+### Miro Board
+Consider a Miro board for the full project
+Consider a separate Miro board for each Team
