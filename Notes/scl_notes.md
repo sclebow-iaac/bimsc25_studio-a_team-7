@@ -105,4 +105,4 @@ Consider a separate Miro board for each Team
 ### Hyper Building A to Hyper Building B
 Define a limited set of goals for each building.  
 Ensure each building does not negatively impact the goals of the other building. 
-For example, if daylighitng is the goal, 
+For example, if daylighitng is the goal for building A, building B should not shade that building.
