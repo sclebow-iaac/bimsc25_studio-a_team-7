@@ -101,3 +101,8 @@ For each parameter we will need to define:
 ### Miro Board
 Consider a Miro board for the full project
 Consider a separate Miro board for each Team
+
+### Hyper Building A to Hyper Building B
+Define a limited set of goals for each building.  
+Ensure each building does not negatively impact the goals of the other building. 
+For example, if daylighitng is the goal, 
