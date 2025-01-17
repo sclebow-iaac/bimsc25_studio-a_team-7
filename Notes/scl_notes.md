@@ -118,7 +118,7 @@ Define a limited set of goals for each building.
 Ensure each building does not negatively impact the goals of the other building. 
 For example, if daylighting is the goal for building A, building B should not shade that building.
 
-# Team InterMatrix
+# Team InterWork
 
 ## Closely Aligned Teams
 Industrial and Service
@@ -126,6 +126,7 @@ Structure and Industrial
 Facade and Structural
 Facade and Residential
 
+## InterMatrix
 Columns: Senders of Data
 Rows: Receivers of Data
 
