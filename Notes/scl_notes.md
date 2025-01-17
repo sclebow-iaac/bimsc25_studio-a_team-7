@@ -4,17 +4,22 @@
 
 ### Team 1 Residential
 
+> Designing Program for Living Spaces
+
 Amira El Saeed
 Mohammed Attay
 Aleyna Kircali
 
 ### Team 2 Industrial
 
+> Placeholder
+
 Aymeric Brouez 
 Cesar Herbosa
 Andres Espinosa
 
 ### Team 3 Structure 
+> Load-bearing systems and vertical circulation.
 
 Marco Durand
 Filippo Batavia
@@ -22,17 +27,23 @@ Joaquin Broquedis
 
 ### Team 4 Facade
 
+> External skin, shading systems, and energy performance.
+
 Andrea Ardizzi
 Giulia Tortorella
 Christina Chistoforou
 
 ### Team 5 Service
 
+> Building Support Services 
+
 Seda Soylu
 Matea Pinjusic
 Francesco Visconti
 
 ### Team 7 Data
+
+> Focused on creating and managing the data architecture, ensuring seamless integration and collaboration across all components.
 
 Mahnoor Fatima
 Biel Pitman
@@ -97,3 +108,11 @@ For each parameter we will need to define:
 1. Recipient: Which team(s) is/are receiving this parameter
 1. Reason: Why is this parameter important 
 1. Dependency: What does it rely on
+
+# Team InterMatrix
+
+|    | Residential |
+| -------- | ------- |
+| January  | $250    |
+| February | $80     |
+| March    | $420    |
