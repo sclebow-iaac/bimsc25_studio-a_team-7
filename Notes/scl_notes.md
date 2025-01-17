@@ -120,8 +120,14 @@ For example, if daylighitng is the goal for building A, building B should not sh
 
 # Team InterMatrix
 
-|    | Residential |
-| -------- | ------- |
-| January  | $250    |
-| February | $80     |
-| March    | $420    |
+
+Columns: Senders of Data
+Rows: Receivers of Data
+
+|          | Residential | Industrial | Structure | Facade | Service |
+| -------- | ----------- | ---------- | --------- | ------ | ------- |
+| Residential | X | ??? | Structural Element Locations, Core Locations | Windows | Transportation |
+| Industrial  |
+| Structure   |
+| Facade      |
+| Service     |
