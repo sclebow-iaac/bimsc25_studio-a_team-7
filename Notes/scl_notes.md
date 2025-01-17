@@ -109,6 +109,15 @@ For each parameter we will need to define:
 1. Reason: Why is this parameter important 
 1. Dependency: What does it rely on
 
+### Miro Board
+Consider a Miro board for the full project
+Consider a separate Miro board for each Team
+
+### Hyper Building A to Hyper Building B
+Define a limited set of goals for each building.  
+Ensure each building does not negatively impact the goals of the other building. 
+For example, if daylighitng is the goal for building A, building B should not shade that building.
+
 # Team InterMatrix
 
 |    | Residential |
