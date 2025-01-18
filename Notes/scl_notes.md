@@ -193,15 +193,3 @@ Industrial and Service
 Structure and Industrial
 Facade and Structural
 Facade and Residential
-
-## InterMatrix
-Columns: Senders of Data
-Rows: Receivers of Data
-
-|          | Residential | Industrial | Structure | Facade | Service |
-| -------- | ----------- | ---------- | --------- | ------ | ------- |
-| Residential | X | ??? | Structural Element Locations, Core Locations | Windows | Transportation |
-| Industrial  |
-| Structure   |
-| Facade      |
-| Service     |
