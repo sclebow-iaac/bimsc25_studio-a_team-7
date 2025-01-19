@@ -118,74 +118,79 @@ Define a limited set of goals for each building.
 Ensure each building does not negatively impact the goals of the other building. 
 For example, if daylighting is the goal for building A, building B should not shade that building.
 
-``` mermaid
-    graph LR
-    
-    Residential -- Unit Types --> Industrial
-    Residential -- Space Layouts --> Industrial
-    Residential -- MEP System Consumption --> Industrial
-    Residential -- Waste Requirements --> Industrial
+## Full Chart
 
-    Residential -- Unit Placement --> Structure
-    Residential -- Unit Weight --> Structure
+```mermaid
+%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 
-    Residential -- Unit Placement --> Facade
+graph LR
 
-    Residential -- Unit Placement --> Service
+Residential -- Unit Types --> Industrial
+Residential -- Space Layouts --> Industrial
+Residential -- MEP System Consumption --> Industrial
+Residential -- Waste Requirements --> Industrial
 
-    Industrial -- Building Systems --> Residential
-    
-    Industrial -- Building Service Routing --> Structure
-    Industrial -- Shaft Requirements --> Structure
-    Industrial -- Equipment Placement --> Structure
-    Industrial -- Equipment Weights --> Structure
+Residential -- Unit Placement --> Structure
+Residential -- Unit Weight --> Structure
 
-    Industrial -- Internal Zoning of Building --> Facade
-    Industrial -- Ventilation Intake and Exhaust Locations --> Facade
+Residential -- Unit Placement --> Facade
 
-    Industrial -- Shaft Requirements --> Service
-    Industrial -- Utility Requirements --> Service
-    Industrial -- Waste Requirements --> Service
+Residential -- Unit Placement --> Service
 
-    Structure -- Structural Elements --> Residential
+Industrial -- Building Systems --> Residential
 
-    Structure -- Structural Elements --> Industrial
-    Structure -- Building Cores --> Service
+Industrial -- Building Service Routing --> Structure
+Industrial -- Shaft Requirements --> Structure
+Industrial -- Equipment Placement --> Structure
+Industrial -- Equipment Weights --> Structure
 
-    Structure -- Structural Elements --> Facade
-    Structure -- Building Cores --> Service
+Industrial -- Internal Zoning of Building --> Facade
+Industrial -- Ventilation Intake and Exhaust Locations --> Facade
 
-    Structure -- Structural Elements --> Service
-    Structure -- Building Cores --> Service
-    
-    Facade -- Daylight/View Access --> Residential
-    Facade -- Acoustics --> Residential
-    Facade -- Building Entrances --> Residential
+Industrial -- Shaft Requirements --> Service
+Industrial -- Utility Requirements --> Service
+Industrial -- Waste Requirements --> Service
 
-    Facade -- Climate Response --> Industrial
-    Facade -- Daylighting --> Industrial
-    Facade -- Facade Materials --> Industrial
-    Facade -- Facade Elements --> Industrial
-    Facade -- Building Entrances --> Industrial
-    
-    Facade -- Facade Materials --> Structure
-    Facade -- Facade Elements --> Structure
-    Facade -- Building Entrances --> Structure
-    
-    Facade -- Daylighting --> Service
-    Facade -- Climate Response --> Service
-    Facade -- Building Entrances --> Service
+Structure -- Structural Elements --> Residential
 
-    Service -- Circulation --> Residential
-    Service -- Service Access --> Residential
-    
-    Service -- Circulation --> Industrial
-    Service -- Service Consumption --> Industrial
-    
-    Service -- Circulation --> Structure
-    Service -- Equipment Weight --> Structure
+Structure -- Structural Elements --> Industrial
+Structure -- Building Cores --> Service
+
+Structure -- Structural Elements --> Facade
+Structure -- Building Cores --> Service
+
+Structure -- Structural Elements --> Service
+Structure -- Building Cores --> Service
+
+Facade -- Daylight/View Access --> Residential
+Facade -- Acoustics --> Residential
+Facade -- Building Entrances --> Residential
+
+Facade -- Climate Response --> Industrial
+Facade -- Daylighting --> Industrial
+Facade -- Facade Materials --> Industrial
+Facade -- Facade Elements --> Industrial
+Facade -- Building Entrances --> Industrial
+
+Facade -- Facade Materials --> Structure
+Facade -- Facade Elements --> Structure
+Facade -- Building Entrances --> Structure
+
+Facade -- Daylighting --> Service
+Facade -- Climate Response --> Service
+Facade -- Building Entrances --> Service
+
+Service -- Circulation --> Residential
+Service -- Service Access --> Residential
+
+Service -- Circulation --> Industrial
+Service -- Service Consumption --> Industrial
+
+Service -- Circulation --> Structure
+Service -- Equipment Weight --> Structure
     
 ```
+
 # Team InterWork
 
 ## Closely Aligned Teams
