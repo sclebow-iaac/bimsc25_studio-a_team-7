@@ -16,77 +16,6 @@ with open(path, "r") as file:
     print(f'End index: {end_index}')
     full_chart = rest_of_file[:end_index]
 
-# Full chart in Mermaid format
-# full_chart = """
-# ``` mermaid
-#     graph TD
-    
-#     Residential -- Unit Types --> Industrial
-#     Residential -- Space Layouts --> Industrial
-#     Residential -- MEP System Consumption --> Industrial
-#     Residential -- Waste Requirements --> Industrial
-
-#     Residential -- Unit Placement --> Structure
-#     Residential -- Unit Weight --> Structure
-
-#     Residential -- Unit Placement --> Facade
-
-#     Residential -- Unit Placement --> Service
-
-#     Industrial -- Building Systems --> Residential
-    
-#     Industrial -- Building Service Routing --> Structure
-#     Industrial -- Shaft Requirements --> Structure
-#     Industrial -- Equipment Placement --> Structure
-#     Industrial -- Equipment Weights --> Structure
-
-#     Industrial -- Internal Zoning of Building --> Facade
-#     Industrial -- Ventilation Intake and Exhaust Locations --> Facade
-
-#     Industrial -- Shaft Requirements --> Service
-#     Industrial -- Utility Requirements --> Service
-#     Industrial -- Waste Requirements --> Service
-
-#     Structure -- Structural Elements --> Residential
-
-#     Structure -- Structural Elements --> Industrial
-#     Structure -- Building Cores --> Service
-
-#     Structure -- Structural Elements --> Facade
-#     Structure -- Building Cores --> Service
-
-#     Structure -- Structural Elements --> Service
-#     Structure -- Building Cores --> Service
-    
-#     Facade -- Daylight/View Access --> Residential
-#     Facade -- Acoustics --> Residential
-#     Facade -- Building Entrances --> Residential
-
-#     Facade -- Climate Response --> Industrial
-#     Facade -- Daylighting --> Industrial
-#     Facade -- Facade Materials --> Industrial
-#     Facade -- Facade Elements --> Industrial
-#     Facade -- Building Entrances --> Industrial
-    
-#     Facade -- Facade Materials --> Structure
-#     Facade -- Facade Elements --> Structure
-#     Facade -- Building Entrances --> Structure
-    
-#     Facade -- Daylighting --> Service
-#     Facade -- Climate Response --> Service
-#     Facade -- Building Entrances --> Service
-
-#     Service -- Circulation --> Residential
-#     Service -- Service Access --> Residential
-    
-#     Service -- Circulation --> Industrial
-#     Service -- Service Consumption --> Industrial
-    
-#     Service -- Circulation --> Structure
-#     Service -- Equipment Weight --> Structure
-    
-# ```"""
-
 # Extract teams from the full chart
 teams = set()
 for line in full_chart.splitlines():
@@ -99,7 +28,6 @@ for line in full_chart.splitlines():
 
         teams.add(team_0)
         teams.add(team_1)
-
 
 path = os.getcwd()
 path = os.path.join(path, 'Chart Generator')
