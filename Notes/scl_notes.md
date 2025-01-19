@@ -121,73 +121,73 @@ For example, if daylighting is the goal for building A, building B should not sh
 ## Full Chart
 
 ```mermaid
-%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
+%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
-graph LR
+flowchart LR
 
-Residential -- Unit Types --> Industrial
-Residential -- Space Layouts --> Industrial
-Residential -- MEP System Consumption --> Industrial
-Residential -- Waste Requirements --> Industrial
+    Residential -- Unit Types --> Industrial
+    Residential -- Space Layouts --> Industrial
+    Residential -- MEP System Consumption --> Industrial
+    Residential -- Waste Requirements --> Industrial
 
-Residential -- Unit Placement --> Structure
-Residential -- Unit Weight --> Structure
+    Residential -- Unit Placement --> Structure
+    Residential -- Unit Weight --> Structure
 
-Residential -- Unit Placement --> Facade
+    Residential -- Unit Placement --> Facade
 
-Residential -- Unit Placement --> Service
+    Residential -- Unit Placement --> Service
 
-Industrial -- Building Systems --> Residential
+    Industrial -- Building Systems --> Residential
 
-Industrial -- Building Service Routing --> Structure
-Industrial -- Shaft Requirements --> Structure
-Industrial -- Equipment Placement --> Structure
-Industrial -- Equipment Weights --> Structure
+    Industrial -- Building Service Routing --> Structure
+    Industrial -- Shaft Requirements --> Structure
+    Industrial -- Equipment Placement --> Structure
+    Industrial -- Equipment Weights --> Structure
 
-Industrial -- Internal Zoning of Building --> Facade
-Industrial -- Ventilation Intake and Exhaust Locations --> Facade
+    Industrial -- Internal Zoning of Building --> Facade
+    Industrial -- Ventilation Intake and Exhaust Locations --> Facade
 
-Industrial -- Shaft Requirements --> Service
-Industrial -- Utility Requirements --> Service
-Industrial -- Waste Requirements --> Service
+    Industrial -- Shaft Requirements --> Service
+    Industrial -- Utility Requirements --> Service
+    Industrial -- Waste Requirements --> Service
 
-Structure -- Structural Elements --> Residential
+    Structure -- Structural Elements --> Residential
 
-Structure -- Structural Elements --> Industrial
-Structure -- Building Cores --> Service
+    Structure -- Structural Elements --> Industrial
+    Structure -- Building Cores --> Service
 
-Structure -- Structural Elements --> Facade
-Structure -- Building Cores --> Service
+    Structure -- Structural Elements --> Facade
+    Structure -- Building Cores --> Service
 
-Structure -- Structural Elements --> Service
-Structure -- Building Cores --> Service
+    Structure -- Structural Elements --> Service
+    Structure -- Building Cores --> Service
 
-Facade -- Daylight/View Access --> Residential
-Facade -- Acoustics --> Residential
-Facade -- Building Entrances --> Residential
+    Facade -- Daylight/View Access --> Residential
+    Facade -- Acoustics --> Residential
+    Facade -- Building Entrances --> Residential
 
-Facade -- Climate Response --> Industrial
-Facade -- Daylighting --> Industrial
-Facade -- Facade Materials --> Industrial
-Facade -- Facade Elements --> Industrial
-Facade -- Building Entrances --> Industrial
+    Facade -- Climate Response --> Industrial
+    Facade -- Daylighting --> Industrial
+    Facade -- Facade Materials --> Industrial
+    Facade -- Facade Elements --> Industrial
+    Facade -- Building Entrances --> Industrial
 
-Facade -- Facade Materials --> Structure
-Facade -- Facade Elements --> Structure
-Facade -- Building Entrances --> Structure
+    Facade -- Facade Materials --> Structure
+    Facade -- Facade Elements --> Structure
+    Facade -- Building Entrances --> Structure
 
-Facade -- Daylighting --> Service
-Facade -- Climate Response --> Service
-Facade -- Building Entrances --> Service
+    Facade -- Daylighting --> Service
+    Facade -- Climate Response --> Service
+    Facade -- Building Entrances --> Service
 
-Service -- Circulation --> Residential
-Service -- Service Access --> Residential
+    Service -- Circulation --> Residential
+    Service -- Service Access --> Residential
 
-Service -- Circulation --> Industrial
-Service -- Service Consumption --> Industrial
+    Service -- Circulation --> Industrial
+    Service -- Service Consumption --> Industrial
 
-Service -- Circulation --> Structure
-Service -- Equipment Weight --> Structure
+    Service -- Circulation --> Structure
+    Service -- Equipment Weight --> Structure
     
 ```
 
