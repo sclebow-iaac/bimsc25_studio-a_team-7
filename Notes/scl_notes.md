@@ -120,8 +120,15 @@ For example, if daylighting is the goal for building A, building B should not sh
 
 ## Full Chart
 
+<!-- <style>
+    .mermaid {
+        display: flex !important;
+        justify-content: center;
+    }
+</style> -->
+
 ```mermaid
-%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+%%{ init: { 'flowchart': { 'curve': 'linear' } } }%%
 
 flowchart LR
 
