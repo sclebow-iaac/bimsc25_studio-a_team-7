@@ -35,6 +35,14 @@ path = os.path.join(path, 'Team Charts')
 
 # print(path)
 
+styles = {
+    "Residential(Residential)": "\n    style Residential fill:#33a9ac, stroke:black, color:#fff",
+    "Industrial(Industrial)": "\n    style Industrial fill:#ffa646, stroke:black",
+    "Structure(Structure)": "\n    style Structure fill:#f86041, stroke:black, color:#fff",
+    "Facade(Facade)": "\n    style Facade fill:#982062, stroke:black, color:#fff",
+    "Service(Service)": "\n    style Service fill:#343779, stroke:black, color:#fff"
+}
+
 # Create markdown files for each team
 for team in teams:
     team_chart = f"""```mermaid\n    graph LR\n"""
@@ -43,7 +51,10 @@ for team in teams:
         if "--" in line:
             if team in line:
                 team_chart += line + '\n'
-    team_chart += "```"
+    for team_name, style in styles.items():
+        if team_name in team_chart:
+            team_chart += style
+    team_chart += "\n```"
 
     team_path = os.path.join(path, f"{team}.md")
     # print(team_path)
@@ -62,11 +73,26 @@ for team_0 in teams:
                 if "--" in line:
                     if team_0 in line and team_1 in line:
                         team_chart += line + '\n'
-            team_chart += "```"
+            for team_name, style in styles.items():
+                if team_name in team_chart:
+                    team_chart += style
+            team_chart += "\n```"
 
             team_path = os.path.join(path, f"{team_0} - {team_1}.md")
-            # print(team_path)
 
-            # Write to markdown file
-            with open(team_path, "w") as file:
-                file.write(team_chart)
+# Generate the Full Chart
+path = os.getcwd()
+path = os.path.join(path, 'Chart Generator')
+path = os.path.join(path, 'Team Charts')
+full_chart_path = os.path.join(path, "Full Chart.md")
+
+full_chart_str = f"""```mermaid\n    graph LR\n"""
+for line in full_chart.splitlines():
+    if "--" in line:
+        full_chart_str += line + '\n'
+for team_name, style in styles.items():
+    if team_name in full_chart_str:
+        full_chart_str += style
+full_chart_str += "\n```"
+with open(full_chart_path, "w") as file:
+    file.write(full_chart_str)

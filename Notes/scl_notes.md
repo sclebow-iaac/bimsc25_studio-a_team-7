@@ -121,77 +121,77 @@ For example, if daylighting is the goal for building A, building B should not sh
 ## Full Chart
 
 ```mermaid
----
- config:
-   layout: elk
-   elk:
----
+    graph LR
 
-graph LR
+    Residential(Residential) -- Unit Types ---> Industrial(Industrial)
+    Residential(Residential) -- Space Layouts ---> Industrial(Industrial)
+    Residential(Residential) -- MEP System Consumption ---> Industrial(Industrial)
+    Residential(Residential) -- Waste Requirements ---> Industrial(Industrial)
 
-    Residential -- Unit Types --> Industrial
-    Residential -- Space Layouts --> Industrial
-    Residential -- MEP System Consumption --> Industrial
-    Residential -- Waste Requirements --> Industrial
+    Residential(Residential) -- Unit Placement ---> Structure(Structure)
+    Residential(Residential) -- Unit Weight ---> Structure(Structure)
 
-    Residential -- Unit Placement --> Structure
-    Residential -- Unit Weight --> Structure
+    Residential(Residential) -- Unit Placement ---> Facade(Facade)
 
-    Residential -- Unit Placement --> Facade
+    Residential(Residential) -- Unit Placement ---> Service(Service)
 
-    Residential -- Unit Placement --> Service
+    Industrial(Industrial) -- Building Systems ---> Residential(Residential)
 
-    Industrial -- Building Systems --> Residential
+    Industrial(Industrial) -- Building Service Routing ---> Structure(Structure)
+    Industrial(Industrial) -- Shaft Requirements ---> Structure(Structure)
+    Industrial(Industrial) -- Equipment Placement ---> Structure(Structure)
+    Industrial(Industrial) -- Equipment Weights ---> Structure(Structure)
 
-    Industrial -- Building Service Routing --> Structure
-    Industrial -- Shaft Requirements --> Structure
-    Industrial -- Equipment Placement --> Structure
-    Industrial -- Equipment Weights --> Structure
+    Industrial(Industrial) -- Internal Zoning of Building ---> Facade(Facade)
+    Industrial(Industrial) -- Ventilation Intake and Exhaust Locations ---> Facade(Facade)
 
-    Industrial -- Internal Zoning of Building --> Facade
-    Industrial -- Ventilation Intake and Exhaust Locations --> Facade
+    Industrial(Industrial) -- Shaft Requirements ---> Service(Service)
+    Industrial(Industrial) -- Utility Requirements ---> Service(Service)
+    Industrial(Industrial) -- Waste Requirements ---> Service(Service)
 
-    Industrial -- Shaft Requirements --> Service
-    Industrial -- Utility Requirements --> Service
-    Industrial -- Waste Requirements --> Service
+    Structure(Structure) -- Structural Elements ---> Residential(Residential)
 
-    Structure -- Structural Elements --> Residential
+    Structure(Structure) -- Structural Elements ---> Industrial(Industrial)
+    Structure(Structure) -- Building Cores ---> Industrial(Industrial)
 
-    Structure -- Structural Elements --> Industrial
-    Structure -- Building Cores --> Service
+    Structure(Structure) -- Structural Elements ----> Facade(Facade)
+    Structure(Structure) -- Building Cores ----> Facade(Facade)
 
-    Structure -- Structural Elements --> Facade
-    Structure -- Building Cores --> Service
+    Structure(Structure) -- Structural Elements ---> Service(Service)
+    Structure(Structure) -- Building Cores ---> Service(Service)
 
-    Structure -- Structural Elements --> Service
-    Structure -- Building Cores --> Service
+    Facade(Facade) -- Daylight/View Access ---> Residential(Residential)
+    Facade(Facade) -- Acoustics ---> Residential(Residential)
+    Facade(Facade) -- Building Entrances ---> Residential(Residential)
 
-    Facade -- Daylight/View Access --> Residential
-    Facade -- Acoustics --> Residential
-    Facade -- Building Entrances --> Residential
+    Facade(Facade) -- Climate Response ---> Industrial(Industrial)
+    Facade(Facade) -- Daylighting ---> Industrial(Industrial)
+    Facade(Facade) -- Facade Materials ---> Industrial(Industrial)
+    Facade(Facade) -- Facade Elements ---> Industrial(Industrial)
+    Facade(Facade) -- Building Entrances ---> Industrial(Industrial)
 
-    Facade -- Climate Response --> Industrial
-    Facade -- Daylighting --> Industrial
-    Facade -- Facade Materials --> Industrial
-    Facade -- Facade Elements --> Industrial
-    Facade -- Building Entrances --> Industrial
+    Facade(Facade) -- Facade Materials ---> Structure(Structure)
+    Facade(Facade) -- Facade Elements ---> Structure(Structure)
+    Facade(Facade) -- Building Entrances ---> Structure(Structure)
 
-    Facade -- Facade Materials --> Structure
-    Facade -- Facade Elements --> Structure
-    Facade -- Building Entrances --> Structure
+    Facade(Facade) -- Daylighting ---> Service(Service)
+    Facade(Facade) -- Climate Response ---> Service(Service)
+    Facade(Facade) -- Building Entrances ---> Service(Service)
 
-    Facade -- Daylighting --> Service
-    Facade -- Climate Response --> Service
-    Facade -- Building Entrances --> Service
+    Service(Service) -- Circulation ---> Residential(Residential)
+    Service(Service) -- Service Access ---> Residential(Residential)
 
-    Service -- Circulation --> Residential
-    Service -- Service Access --> Residential
+    Service(Service) -- Circulation ---> Industrial(Industrial)
+    Service(Service) -- Service Consumption ---> Industrial(Industrial)
 
-    Service -- Circulation --> Industrial
-    Service -- Service Consumption --> Industrial
-
-    Service -- Circulation --> Structure
-    Service -- Equipment Weight --> Structure
+    Service(Service) -- Circulation ---> Structure(Structure)
+    Service(Service) -- Equipment Weight ---> Structure(Structure)
+    
+    style Residential fill:#33a9ac, stroke:black, color:#fff
+    style Industrial fill:#ffa646, stroke:black
+    style Structure fill:#f86041, stroke:black, color:#fff
+    style Facade fill:#982062, stroke:black, color:#fff
+    style Service fill:#343779, stroke:black, color:#fff
     
 ```
 
