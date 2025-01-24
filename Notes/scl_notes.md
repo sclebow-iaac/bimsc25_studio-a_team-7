@@ -247,3 +247,20 @@ Industrial and Service
 Structure and Industrial
 Facade and Structural
 Facade and Residential
+
+# Week 2 Friday Meeting
+
+## Building Mass
+Need to generate an initial building mass to start considering different criterea.
+Data Team to create a list of inputs that will contrain the building mass.
+
+## Topological Map
+Need to generate a program map for the building.  Data Team will overlap ideas from each concept based on meeting notes.
+
+## Connection To Building B
+Need to observe building B's concept and find needs to connect them.
+
+## Monday Presentation
+Each team presents a single concept of their portion of the design.
+Have ChatGPT combine these into a single vision of the building.
+Have a single side presenting a concept for the entire building.  
