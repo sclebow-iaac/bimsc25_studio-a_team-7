@@ -63,7 +63,7 @@ Ratio between void space and building space has impact on the volume.
 
 Primary metric, maximize view exposure and minimize sun exposure.  Testing different shapes of facade panels, goal of using a single panel.  Secondary metric is radiance.  Adaptive ideas, not high tech.  Perhaps also thinking about solar panel integration in the facade.
 
-May have to choose between kinetic facade and solar panels. 
+Will have to choose where on the massing we will place kinetic facade or solar panels.  Will place one or the other at any location.
 
 How does the shape of the building come in this project?
 
