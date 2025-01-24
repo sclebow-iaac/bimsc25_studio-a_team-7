@@ -10,6 +10,11 @@ Amira El Saeed
 Mohammed Attay
 Aleyna Kircali
 
+Concept:
+15 minute city.  Goal is to make sure we have a maximum distance to ammenities from each residential unit.  Using cluster algorithms.  
+
+Currently working on cluster arrangement algorithms.
+
 ### Team 2 Industrial
 
 > Placeholder
@@ -18,12 +23,28 @@ Aymeric Brouez
 Cesar Herbosa
 Andres Espinosa
 
+Concept:
+We reduce down to three main topics, energy, water and waste.  Aiming for not net-zero but self-sufficiency 2x.  From the waste part it's zero-waste development, connecting to city for wastewater.  Trying to hide the existing wastewater plant.  Trying to clean the waste from neighbors.
+
+About food, targetting a vegetarian + fish + chicken / eggs.  Self sufficient using waste that is recycling.  May use parks as food production and also lesuire.  Want to work with Residential Team.
+
 ### Team 3 Structure 
 > Load-bearing systems and vertical circulation.
 
 Marco Durand
 Filippo Batavia
 Joaquin Broquedis
+
+Concept:
+Want to focus on Flow through the building.  Want to provide flexibility and easier to collaborate.  Also to allow the building functions to change through the life of the building.  Main metric, greater slab total area vs smallest structural element area.  Want to combine vertical cores and horizontal circulation into diagonal "cores" with junctions.  Junctions could serve as centers of districts and mobility hubs.  
+
+Also want to keep ground floor elevated to allow connection to urban flow.  We want to make this structural system as flexible as possible.  Rather than a fixed structure, we could take a 3D topological map based on which programs need to be connected and translate that into a structural diagram.  
+
+Flow of forces and follow circulation through the main building, and exoskeleton to handle torsion and seismic activity.  Also consider the flow of water through the buidling, collect water on roof and store as seismic dampers.  Then flow the water through the building to serve other functions, like food production.
+
+They will be taking some space from the water treatment plant, want to integrate the plant into the building's water use.  Could have flowing water / waterfalls through offices, or ponds / fountains in parks.  
+
+Thinking about a network of voids and negative space to serve green space and provide daylight.
 
 ### Team 4 Facade
 
@@ -33,6 +54,19 @@ Andrea Ardizzi
 Giulia Tortorella
 Christina Chistoforou
 
+Concept:
+Started with climate analysis on a box building.  Start to make the framework so we can test different iterations of the facade.  We've run some analysis and want to avoid being an obstacle to the other buildings.  Want to test how the winter solstice effects the building.
+
+They've tested the maximum mass of 1M sqm filling the entire site.  If we don't want to be an obstacle, this is the largest we can be.  
+
+Ratio between void space and building space has impact on the volume.  
+
+Primary metric, maximize view exposure and minimize sun exposure.  Testing different shapes of facade panels, goal of using a single panel.  Secondary metric is radiance.  Adaptive ideas, not high tech.  Perhaps also thinking about solar panel integration in the facade.
+
+May have to choose between kinetic facade and solar panels. 
+
+How does the shape of the building come in this project?
+
 ### Team 5 Service
 
 > Building Support Services 
@@ -40,6 +74,17 @@ Christina Chistoforou
 Seda Soylu
 Matea Pinjusic
 Francesco Visconti
+
+Concept: 
+Functions placed in the building are based on the time usage of the day.  Some uses are more morning, others are more evening / night.  How many hours is a space used?  Need multifunctional spaces that can be used different times of the day for different uses.  Some cannot be multifunction but others can.
+
+Also explore use of space for different times of the year.  For example, student housing would be primarily used during schoolyear.  
+
+Want to also explore the use of mobility.  Maybe not all the mobility should be electricity driven.  Should have parts of the building where you can walk or ride a bike.  Maybe gravity solutions like slides or rails.
+
+Need to determine the topological map for the building.  Detemine types of neighborhoods.  
+
+Microclimate inside the building.  Use aspects of other team concepts to define the climates.  
 
 ### Team 7 Data
 
