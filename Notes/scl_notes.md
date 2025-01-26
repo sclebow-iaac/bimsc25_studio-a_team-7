@@ -168,13 +168,9 @@ For example, if daylighting is the goal for building A, building B should not sh
 ```mermaid
     graph LR
 
-    Residential(Residential) -- Unit Types ---> Industrial(Industrial)
-    Residential(Residential) -- Space Layouts ---> Industrial(Industrial)
-    Residential(Residential) -- MEP System Consumption ---> Industrial(Industrial)
-    Residential(Residential) -- Waste Requirements ---> Industrial(Industrial)
+    Residential(Residential) -- Unit Placement<br>and Requirements ---> Industrial(Industrial)
 
-    Residential(Residential) -- Unit Placement ---> Structure(Structure)
-    Residential(Residential) -- Unit Weight ---> Structure(Structure)
+    Residential(Residential) -- Unit Placement<br> and Weights ---> Structure(Structure)
 
     Residential(Residential) -- Unit Placement ---> Facade(Facade)
 
@@ -183,54 +179,45 @@ For example, if daylighting is the goal for building A, building B should not sh
     Industrial(Industrial) -- Building Systems ---> Residential(Residential)
 
     Industrial(Industrial) -- Building Service Routing ---> Structure(Structure)
-    Industrial(Industrial) -- Shaft Requirements ---> Structure(Structure)
-    Industrial(Industrial) -- Equipment Placement ---> Structure(Structure)
-    Industrial(Industrial) -- Equipment Weights ---> Structure(Structure)
+    Industrial(Industrial) -- Equipment Placement<br> and Weight ---> Structure(Structure)
 
-    Industrial(Industrial) -- Internal Zoning of Building ---> Facade(Facade)
-    Industrial(Industrial) -- Ventilation Intake and Exhaust Locations ---> Facade(Facade)
-
-    Industrial(Industrial) -- Shaft Requirements ---> Service(Service)
-    Industrial(Industrial) -- Utility Requirements ---> Service(Service)
-    Industrial(Industrial) -- Waste Requirements ---> Service(Service)
+    Industrial(Industrial) -- Ventilation Intake <br>and Exhaust Locations ---> Facade(Facade)
 
     Structure(Structure) -- Structural Elements ---> Residential(Residential)
+    Structure(Structure) -- Building Circulation ---> Industrial(Industrial)
 
     Structure(Structure) -- Structural Elements ---> Industrial(Industrial)
-    Structure(Structure) -- Building Cores ---> Industrial(Industrial)
+    Structure(Structure) -- Building Circulation ---> Industrial(Industrial)
 
     Structure(Structure) -- Structural Elements ----> Facade(Facade)
-    Structure(Structure) -- Building Cores ----> Facade(Facade)
 
     Structure(Structure) -- Structural Elements ---> Service(Service)
-    Structure(Structure) -- Building Cores ---> Service(Service)
+    Structure(Structure) -- Building Circulation ---> Service(Service)
 
-    Facade(Facade) -- Daylight/View Access ---> Residential(Residential)
-    Facade(Facade) -- Acoustics ---> Residential(Residential)
+    Facade(Facade) -- Daylight Analysis ---> Residential(Residential)
     Facade(Facade) -- Building Entrances ---> Residential(Residential)
 
-    Facade(Facade) -- Climate Response ---> Industrial(Industrial)
-    Facade(Facade) -- Daylighting ---> Industrial(Industrial)
-    Facade(Facade) -- Facade Materials ---> Industrial(Industrial)
+    Facade(Facade) -- Climate Response<br>Requirements ---> Industrial(Industrial)
+    Facade(Facade) -- Daylight Analysis ---> Industrial(Industrial)
     Facade(Facade) -- Facade Elements ---> Industrial(Industrial)
     Facade(Facade) -- Building Entrances ---> Industrial(Industrial)
+    Facade(Facade) -- Solar Panels ---> Industrial(Industrial)
 
-    Facade(Facade) -- Facade Materials ---> Structure(Structure)
     Facade(Facade) -- Facade Elements ---> Structure(Structure)
     Facade(Facade) -- Building Entrances ---> Structure(Structure)
 
-    Facade(Facade) -- Daylighting ---> Service(Service)
-    Facade(Facade) -- Climate Response ---> Service(Service)
+    Facade(Facade) -- Daylight Analysis ---> Service(Service)
+    Facade(Facade) -- Climate Response<br>Requirements ---> Service(Service)
     Facade(Facade) -- Building Entrances ---> Service(Service)
 
-    Service(Service) -- Circulation ---> Residential(Residential)
+    Service(Service) -- Building Circulation ---> Residential(Residential)
     Service(Service) -- Service Access ---> Residential(Residential)
 
-    Service(Service) -- Circulation ---> Industrial(Industrial)
+    Service(Service) -- Building Circulation ---> Industrial(Industrial)
     Service(Service) -- Service Consumption ---> Industrial(Industrial)
 
-    Service(Service) -- Circulation ---> Structure(Structure)
-    Service(Service) -- Equipment Weight ---> Structure(Structure)
+    Service(Service) -- Building Circulation ---> Structure(Structure)
+    Service(Service) -- Equipment Placement<br> and Weight ---> Structure(Structure)
     
     style Residential fill:#33a9ac, stroke:black, color:#fff
     style Industrial fill:#ffa646, stroke:black
