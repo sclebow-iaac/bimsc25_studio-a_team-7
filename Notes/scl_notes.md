@@ -342,7 +342,7 @@ The Service Team’s focus on multifunctional spaces and daily mobility integrat
     Concept --> Service
 
     style Structure fill:#f86041, stroke:black, color:#fff
-    style Residential fill:#41b883, stroke:black, color:#fff
+    style Residential fill:#33a9ac, stroke:black, color:#fff
     style Service fill:#343779, stroke:black, color:#fff
     style Concept fill:#fff, stroke:black, color:#000, stroke-width:4px, font-size:16pt
 ```
