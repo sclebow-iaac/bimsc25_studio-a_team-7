@@ -336,4 +336,71 @@ The Service Team’s focus on multifunctional spaces and daily mobility integrat
 
 ## Self-sufficiency and Reuse / Recycling
 
-Many teams indicated a goal of designing a building that is not a drain on external resources and instead seeks to be efficient with local resources.
+Many teams indicated a goal of designing a building that is not a drain on external resources and instead seeks to be efficient with local resources.   
+
+# Metrics
+
+## Industrial Team:
+
+**Primary Metric:** Water Recycling Efficiency
+
+**Normalized Value:** 
+``` math
+Effiency Percentage = \frac{Total Water Usage - Incoming Water}{Total Water Usage}
+```
+
+**Secondary Metric:** Energy Production and Storage
+
+## Facade Team:
+
+**Primary Metric:** Climate control - Maximize view minimize sun exposure
+
+**Normalized Value:** Percent of available daylight to building used with respect to building programming. (Daylight that enters an used room at that time of day)
+
+```math
+    \frac {DaylightAmountUsed}{TotalIncomingDaylight}
+```
+
+**Secondary Metric:** Panel Optimization (% of the same panel)
+
+## Residential Team:
+
+**Primary Metric:** Maximum Travel time between any Individual Unit and nearest amenity (goal to be below 15 minutes)
+
+**Normalized Value:** 
+``` math
+    1.0 - \frac{Travel Time} {15 minute}
+```
+
+## Service Team:
+
+**Primary Metric:**  Connectivity Metric: Achieving the shortest path goals(in 1min,5 min, 15min travel distance goals for each function) between specified functions in each neighborhood.
+
+**Normalized Value:** 
+``` math
+    \frac {Quantity Of Listed Goals Met} {Total Quantity Of Listed Goals}
+```
+<br>
+
+**Secondary Metrics:**
+
+**Sustainability:** Balance between self-energy generation and energy consumption in the connections between components. 
+
+**Liveliness:** Enable 24/7 activity throughout the building.
+
+## Structure Team:
+
+**Primary Metric:** Structure floor area/Total floor area (floor usage flexibility)
+
+**Normalized Value:** 
+``` math
+    \frac {Structural Floor Area}{Total Floor Area}
+```
+**Secondary Metrics:**
+
+Material Utilization Ratio (structural efficiency):
+
+``` math
+\frac {Amount Of Connections That Are Structural Elements }{ Total Amount Of Connections}
+```
+(utilization of connections as structural elements)
