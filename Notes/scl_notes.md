@@ -264,3 +264,89 @@ Need to observe building B's concept and find needs to connect them.
 Each team presents a single concept of their portion of the design.
 Have ChatGPT combine these into a single vision of the building.
 Have a single side presenting a concept for the entire building.  
+
+# Strong Concept Scope Overlaps
+
+## Water Flow
+### Industrial, Service and Structure
+Both teams seek to design a water system that flows through the building for multiple uses.
+
+```mermaid
+    graph LR
+
+    Structure(Locations of Water Storage<br>for Counterweight<br>Structure Team)
+    Concept(Water Flow System)
+    Service(Locations of Programming<br>to Flow water through<br>Facade Team)
+    Industrial(Water Recycling Systems<br>Industrial Team)
+
+    Structure --> Concept
+    Service --> Concept
+
+    Concept --> Industrial
+    Industrial --> Concept
+
+    style Industrial fill:#ffa646, stroke:black
+    style Structure fill:#f86041, stroke:black, color:#fff
+    style Service fill:#343779, stroke:black, color:#fff
+    style Concept fill:#fff, stroke:black, color:#000, stroke-width:4px, font-size:16pt
+
+```
+
+## Void Placement
+### Structure and Facade -> Services
+Structure has highlighted void placement in the building form and Facade has highlighting daylight.  Void's can be designed to maximize daylighting and provide Structural load bearing.  
+
+Services team can use the void placement as an input to locate parks.
+
+```mermaid
+    graph LR
+
+    Structure(Optimize for <br>Structural Loads<br>Structure Team)
+    Concept(Void Placement)
+    Facade(Optimize for <br>Daylighting<br>Facade Team)
+    Service(Park Placement<br>Service Team)
+
+    Structure --> Concept
+    Facade --> Concept
+
+    Concept --> Structure
+    Concept --> Facade
+
+    Concept --> Service
+
+    style Structure fill:#f86041, stroke:black, color:#fff
+    style Facade fill:#982062, stroke:black, color:#fff
+    style Service fill:#343779, stroke:black, color:#fff
+    style Concept fill:#fff, stroke:black, color:#000, stroke-width:4px, font-size:16pt
+
+```
+
+## Multifunctional Space, Circulation and Cluster Efficiency
+### Residential, Structure and Service
+
+The Service Team’s focus on multifunctional spaces and daily mobility integration (walking, biking, gravity solutions) overlaps strongly with the Structural Team’s flexible structural designs and focus on circulation flow and with Residential Team's goal of minimizing transit time to amenities. Together, they can create adaptive spaces that evolve based on time-of-day and season.
+
+```mermaid
+    graph LR
+
+    Structure(Optimize for <br>Circulation Flow<br>Structure Team)
+    Residential(Optimize for <br>Transit Time<br>Residential Team)
+    Service(Define Multifunctional <br>Spaces<br>Service Team)
+    Concept(Multifunctional Space, <br>Circulation, and <br>Cluster Efficiency)
+
+    Structure --> Concept
+    Residential --> Concept
+
+    Concept --> Structure
+    Concept --> Residential
+    Concept --> Service
+
+    style Structure fill:#f86041, stroke:black, color:#fff
+    style Residential fill:#41b883, stroke:black, color:#fff
+    style Service fill:#343779, stroke:black, color:#fff
+    style Concept fill:#fff, stroke:black, color:#000, stroke-width:4px, font-size:16pt
+```
+
+## Self-sufficiency and Reuse / Recycling
+
+Many teams indicated a goal of designing a building that is not a drain on external resources and instead seeks to be efficient with local resources.
