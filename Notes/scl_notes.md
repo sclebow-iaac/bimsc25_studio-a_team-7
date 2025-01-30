@@ -404,3 +404,14 @@ Material Utilization Ratio (structural efficiency):
 \frac {Amount Of Connections That Are Structural Elements }{ Total Amount Of Connections}
 ```
 (utilization of connections as structural elements)
+
+# Week 3 Data Team Meeting
+
+## Data Sharing
+Ways to share GH Files on Google Drive.  
+Data Input/Output Nodes
+    Option 1: Share ghdata file separately from speckle over gdrive
+    Option 2: We output the gh data into speckle parameters
+Share the ghdata files also on drive
+
+## Dashboard
