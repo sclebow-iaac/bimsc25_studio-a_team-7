@@ -1,7 +1,7 @@
 ```mermaid
     graph LR
-    Industrial(Industrial) -- Building Service Routing ---> Structure(Structure)
-    Industrial(Industrial) -- Equipment Placement<br> and Weight ---> Structure(Structure)
+    Industrial(Industrial) -- Building Service Routing<br>Curves ---> Structure(Structure)
+    Industrial(Industrial) -- Equipment Placement<br>Rectangular Prisms<br>and Weight<br>floats ---> Structure(Structure)
     Structure(Structure) -- Building Circulation ---> Industrial(Industrial)
     Structure(Structure) -- Structural Elements ---> Industrial(Industrial)
     Structure(Structure) -- Building Circulation ---> Industrial(Industrial)
