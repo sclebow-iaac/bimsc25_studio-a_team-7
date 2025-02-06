@@ -203,7 +203,7 @@ For example, if daylighting is the goal for building A, building B should not sh
     Facade(Facade) -- Building Entrances ---> Industrial(Industrial)
     Facade(Facade) -- Solar Panels ---> Industrial(Industrial)
 
-    Facade(Facade) -- Facade Elements ---> Structure(Structure)
+    Facade(Facade) -- Facade Elements TEST ---> Structure(Structure)
     Facade(Facade) -- Building Entrances ---> Structure(Structure)
 
     Facade(Facade) -- Daylight Analysis ---> Service(Service)
