@@ -1,5 +1,20 @@
 <style>
-body {
+h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+h3 {
+    font-family: 'Roboto Mono', monospace;
+}
+h4 {
+    font-family: 'Roboto Mono', monospace;
+}
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+li {
     font-family: 'Roboto Mono', monospace;
 }
 </style>
@@ -9,7 +24,6 @@ body {
 ## Teams
 
 ### Team 1 Residential
-
 > Designing Program for Living Spaces
 
 Amira El Saeed
@@ -346,7 +360,7 @@ Many teams indicated a goal of designing a building that is not a drain on exter
 
 # Metrics
 
-## Industrial Team:
+## <span style="background-color: #FFA646">Industrial </span>Team:
 
 **Primary Metric:** Energy Self-sufficiency Ratio
 
@@ -376,7 +390,7 @@ Many teams indicated a goal of designing a building that is not a drain on exter
     \frac {Recycled Solid Waste}{Solid Waste Production}
 ```
 
-## Facade Team:
+## <span style="background-color: #982062; color: white">Facade </span>Team:
 
 **Primary Metric:** Climate control - Maximize view minimize sun exposure
 
@@ -388,7 +402,7 @@ Many teams indicated a goal of designing a building that is not a drain on exter
 
 **Secondary Metric:** Panel Optimization (% of the same panel)
 
-## Residential Team:
+## <span style="background-color: #33a9ac; color: white">Residential </span>Team:
 
 **Primary Metric:** Index of Mixed-Use
 
@@ -398,7 +412,7 @@ Many teams indicated a goal of designing a building that is not a drain on exter
 ```
 Goal to be between 0.6 and 0.8.
 
-## Service Team:
+### <span style="background-color: #343779; color: white">Service </span>Team:
 
 **Primary Metric:**  Theoretical 24/7 Occupancy Efficiency Formula
 
@@ -409,7 +423,7 @@ Goal to be between 0.6 and 0.8.
 Where i is each function in the building.
 <br>
 
-## Structure Team:
+## <span style="background-color: #F86041; color: white">Structure </span>Team:
 
 **Primary Metric:** Floor Flexibility: Column-Free Floor Area Ratio
 
