@@ -342,14 +342,33 @@ Many teams indicated a goal of designing a building that is not a drain on exter
 
 ## Industrial Team:
 
-**Primary Metric:** Water Recycling Efficiency
+**Primary Metric:** Energy Self-sufficiency Ratio
 
 **Normalized Value:** 
 ``` math
-Effiency Percentage = \frac{Total Water Usage - Incoming Water}{Total Water Usage}
+    \frac {Energy Generation}{Energy Demand}
 ```
 
-**Secondary Metric:** Energy Production and Storage
+**Secondary Metric:** Food Self-sufficiency Ratio
+
+**Normalized Value:** 
+``` math
+    \frac {Food Production}{Food Demand}
+```
+
+**Secondary Metric:** Recycled Water Ratio
+
+**Normalized Value:** 
+``` math
+    \frac {Recycled Water}{Wastewater Production}
+```
+
+**Secondary Metric:** Solid Waste Utilization Ratio
+
+**Normalized Value:** 
+``` math
+    \frac {Recycled Solid Waste}{Solid Waste Production}
+```
 
 ## Facade Team:
 
@@ -365,45 +384,57 @@ Effiency Percentage = \frac{Total Water Usage - Incoming Water}{Total Water Usag
 
 ## Residential Team:
 
-**Primary Metric:** Maximum Travel time between any Individual Unit and nearest amenity (goal to be below 15 minutes)
+**Primary Metric:** Index of Mixed-Use
 
 **Normalized Value:** 
 ``` math
-    1.0 - \frac{Travel Time} {15 minute}
+    1-\frac{\sum{Number Of Units Of A Single Function_i (Number Of Units Of A Single Function_i - 1)}}{Total Number Of Units * (Total Number Of Units - 1)}
 ```
+Goal to be between 0.6 and 0.8.
 
 ## Service Team:
 
-**Primary Metric:**  Connectivity Metric: Achieving the shortest path goals(in 1min,5 min, 15min travel distance goals for each function) between specified functions in each neighborhood.
+**Primary Metric:**  Theoretical 24/7 Occupancy Efficiency Formula
 
 **Normalized Value:** 
 ``` math
-    \frac {Quantity Of Listed Goals Met} {Total Quantity Of Listed Goals}
+    \frac {\sum_{i-1}^{n} (Utilization Rate Of Function _i * Active Hours Of Function Per Day_i * FunctionExchangeFactor_i)}{Total Available Hours Per Day * Total Spaces Available}
 ```
+Where i is each function in the building.
 <br>
-
-**Secondary Metrics:**
-
-**Sustainability:** Balance between self-energy generation and energy consumption in the connections between components. 
-
-**Liveliness:** Enable 24/7 activity throughout the building.
 
 ## Structure Team:
 
-**Primary Metric:** Structure floor area/Total floor area (floor usage flexibility)
+**Primary Metric:** Floor Flexibility: Column-Free Floor Area Ratio
 
 **Normalized Value:** 
 ``` math
-    \frac {Structural Floor Area}{Total Floor Area}
+    \frac {Total ColumnFree Floor Area}{Total Floor Area}
 ```
-**Secondary Metrics:**
+With established comparison cases based on industry standards.
 
-Material Utilization Ratio (structural efficiency):
+**Secondary Metric:** Structural Efficiency: Embodied Carbon Efficiency
 
+**Normalized Value:** 
 ``` math
-\frac {Amount Of Connections That Are Structural Elements }{ Total Amount Of Connections}
+    \frac {Total Embodied Carbon Emissions}{Usable Floor Area}
 ```
-(utilization of connections as structural elements)
+
+**Secondary Metric:** Structural Efficiency: Structural Efficiency Rating
+
+**Normalized Value:** 
+``` math
+    \frac {Load Capacity}{Self Weight Of Structure}
+```
+Existing Metric from the Structural Engineering Industry.
+
+**Secondary Metric:** Structural Efficiency: Material Efficiency Ratio
+
+**Normalized Value:** 
+``` math
+    \frac {Theoretical Minimum Material Usage}{Actual Material Usage}
+```
+Karamba3D Analysis
 
 # Week 3 Data Team Meeting
 
@@ -415,3 +446,4 @@ Data Input/Output Nodes
 Share the ghdata files also on drive
 
 ## Dashboard
+
