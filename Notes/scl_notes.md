@@ -392,15 +392,27 @@ Many teams indicated a goal of designing a building that is not a drain on exter
 
 ## <span style="background-color: #982062; color: white">Facade </span>Team:
 
-**Primary Metric:** Climate control - Maximize view minimize sun exposure
+**Primary Metric:** Primary Daylight Factor & and Solar Loads Control for Residential Spaces and Work Spaces
 
-**Normalized Value:** Percent of available daylight to building used with respect to building programming. (Daylight that enters an used room at that time of day)
+**Normalized Value:** Combined Metric
 
 ```math
-    \frac {DaylightAmountUsed}{TotalIncomingDaylight}
+    weight_{residential} * \frac{ResidentialAreaWithDaylight}{TotalResidentialArea} + weight_{work} * \frac{WorkAreaWithDaylight}{TotalWorkArea} * \frac{10}{7}
 ```
 
-**Secondary Metric:** Panel Optimization (% of the same panel)
+**Secondary Metric:** Panel Optimization
+
+**Normalized Value:** 
+``` math
+    \frac {Total Final Panel Area}{Total Initial Panel Area}
+```
+
+**Secondary Metric:** Target Energy Generation Ratio
+
+**Normalized Value:** 
+``` math
+    \frac {Energy Generation}{Energy Required By Industrial Team}
+```
 
 ## <span style="background-color: #33a9ac; color: white">Residential </span>Team:
 
