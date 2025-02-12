@@ -424,7 +424,7 @@ Many teams indicated a goal of designing a building that is not a drain on exter
 ```
 Goal to be between 0.6 and 0.8.
 
-### <span style="background-color: #343779; color: white">Service </span>Team:
+## <span style="background-color: #343779; color: white">Service </span>Team:
 
 **Primary Metric:**  Theoretical 24/7 Occupancy Efficiency Formula
 

@@ -1,0 +1,9 @@
+Services,Data,Concept Visualization,Miro
+Services,Residential|Industrial|Structure,Topological Map,Excel|Drive|Speckle|Miro
+Services,Residential|Industrial|Structure,Neighborhood Program,Grasshopper|Excel
+Services,Residential|Industrial|Structure|Facade|Data,Connection Points / Program Elements,Drive|Speckle|Miro
+Services,Structure,Circulation Network,Speckle
+Services,Structure,Core Placements,Speckle
+Services,Facade,Building Mass Solid / Void,Speckle
+Services,Residential|Industrial,3D Graph - Neighborhoods,Speckle|Grasshopper
+Services,Data,KPI Analysis,Drive|Grasshopper|Speckle
