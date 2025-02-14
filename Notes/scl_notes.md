@@ -479,3 +479,152 @@ Share the ghdata files also on drive
 
 ## Dashboard
 
+# 250213 Data Request Template
+
+## Preamble
+Hello [Team Name] Team, 
+
+We're going to start extracting data from your models in the next week.  We need to have the following attributes available to generate our Dashboards.  We need all the data attributes to be uploaded in the same model, but we do not necessarily need them in a model that is only for the data team.  These can be uploaded anywhere inside the model, we can search for the attributes.  Please name the attributes exactly as they are named in the list below.  If you have any questions or suggestions, please let us know.
+
+## Facade Team
+Data We Need:
+
+Name: ResidentialAreaWithDaylight
+Data Type: Number
+Unit: Square Meters
+
+Name: TotalResidentialArea
+Data Type: Number
+Unit: Square Meters
+
+Name: WorkAreaWithDaylight
+Data Type: Number
+Unit: Square Meters
+
+Name: TotalWorkArea
+Data Type: Number
+Unit: Square Meters
+
+Name: TotalFinalPanelArea
+Data Type: Number
+Unit: Square Meters
+
+Name: TotalInitialPanelArea
+Data Type: Number
+Unit: Square Meters
+
+Name: EnergyGeneration
+Data Type: Number
+Unit: Kilowatt Hours
+
+Name: EnergyRequiredByIndustrialTeam
+Data Type: Number
+Unit: Kilowatt Hours
+
+## Industrial Team
+Data We Need:
+
+Name: EnergyGeneration
+Data Type: Number
+Unit: Kilowatt Hours
+
+Name: EnergyDemand
+Data Type: Number
+Unit: Kilowatt Hours
+
+Name: FoodProduction
+Data Type: Number
+Unit: Kilograms
+
+Name: FoodDemand
+Data Type: Number
+Unit: Kilograms
+
+Name: RecycledWater
+Data Type: Number
+Unit: Cubic Meters
+
+Name: WastewaterProduction
+Data Type: Number
+Unit: Cubic Meters
+
+Name: RecycledSolidWaste
+Data Type: Number
+Unit: Kilograms
+
+Name: SolidWasteProduction
+Data Type: Number
+Unit: Kilograms
+
+## Residential Team
+Data We Need:
+
+Name: ListOfUnitFunctions
+Data Type: List of Strings
+Unit: None
+
+Name: NumberOfUnitsOfASingleFunction
+Data Type: List of Numbers (Integers, should be in the same order as ListOfUnitFunctions)
+Unit: Count
+
+## Service Team
+Data We Need:
+
+Name: ListOfFunctionNames
+Data Type: List of Strings
+Unit: None
+
+Name: UtilizationRateOfFunction
+Data Type: List of Numbers (Floats, should be in the same order as ListOfFunctionNames)
+Unit: Percentage (0.0 - 1.0)
+
+Name: ActiveHoursOfFunctionPerDay
+Data Type: List of Numbers (Floats, should be in the same order as ListOfFunctionNames)
+Unit: Hours
+
+Name: FunctionExchangeFactor
+Data Type: List of Numbers (Floats, should be in the same order as ListOfFunctionNames)
+Unit: None
+
+Name: TotalAvailableHoursPerDay
+Data Type: Number
+Unit: Hours
+
+Name: TotalSpacesAvailable
+Data Type: Number (Integer)
+Unit: Count
+
+## Structure Team
+Data We Need:
+
+Name: TotalColumnFreeFloorArea
+Data Type: Number
+Unit: Square Meters
+
+Name: TotalFloorArea
+Data Type: Number
+Unit: Square Meters
+
+Name: TotalEmbodiedCarbonEmissions
+Data Type: Number
+Unit: Kilograms
+
+Name: UsableFloorArea
+Data Type: Number
+Unit: Square Meters
+
+Name: LoadCapacity
+Data Type: Number
+Unit: Kilograms
+
+Name: SelfWeightOfStructure
+Data Type: Number
+Unit: Kilograms
+
+Name: TheoreticalMinimumMaterialUsage
+Data Type: Number
+Unit: Kilograms
+
+Name: ActualMaterialUsage
+Data Type: Number
+Unit: Kilograms
