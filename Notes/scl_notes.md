@@ -445,13 +445,6 @@ Where i is each function in the building.
 ```
 With established comparison cases based on industry standards.
 
-**Secondary Metric:** Structural Efficiency: Embodied Carbon Efficiency
-
-**Normalized Value:** 
-``` math
-    \frac {Total Embodied Carbon Emissions}{Usable Floor Area}
-```
-
 **Secondary Metric:** Structural Efficiency: Structural Efficiency Rating
 
 **Normalized Value:** 
@@ -459,14 +452,6 @@ With established comparison cases based on industry standards.
     \frac {Load Capacity}{Self Weight Of Structure}
 ```
 Existing Metric from the Structural Engineering Industry.
-
-**Secondary Metric:** Structural Efficiency: Material Efficiency Ratio
-
-**Normalized Value:** 
-``` math
-    \frac {Theoretical Minimum Material Usage}{Actual Material Usage}
-```
-Karamba3D Analysis
 
 # Week 3 Data Team Meeting
 
